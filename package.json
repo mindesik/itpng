@@ -1,0 +1,22 @@
+{
+  "name": "itinypng",
+  "version": "1.0.2",
+  "description": "Tinypng.com cli tool",
+  "bin": {
+    "itinypng": "bin/itinypng.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://misterpaladin@github.com/misterpaladin/itinypng.git"
+  },
+  "author": "Eugene Min <e.min@milax.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misterpaladin/itinypng/issues"
+  },
+  "homepage": "https://github.com/misterpaladin/itinypng#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "tinify": "^1.3.0"
+  }
+}

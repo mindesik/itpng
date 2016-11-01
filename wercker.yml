@@ -1,0 +1,14 @@
+box: node
+
+build:
+    steps:
+        - npm-install
+
+publish:
+    steps:
+        - script:
+            name: login
+            code: echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} >> ~/.npmrc
+        - script:
+            name: push
+            code: npm publish
