@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 var tinify = require('tinify');
-var env = require('dotenv').config({path: process.env.HOME + '/.itinypng'});
+var env = require('dotenv').config({path: process.env.HOME + '/.itpng'});
 var extensions = ['png', 'jpg', 'jpeg'];
 
 if (!env.TINYPNG_API_KEY) {
