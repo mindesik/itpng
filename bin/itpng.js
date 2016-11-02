@@ -26,6 +26,7 @@ fs.readdirSync(process.cwd()).forEach(function (file) {
 });
 
 if (toConvert.length > 0) {
+    console.log('Working...');
     toConvert.forEach(function (file, i) {
         var source = tinify.fromFile(file);
         var parts = file.split('.');

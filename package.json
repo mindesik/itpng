@@ -1,6 +1,6 @@
 {
   "name": "itpng",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "tinypng.com cli tool",
   "bin": {
     "itpng": "bin/itpng.js"
