@@ -1,9 +1,9 @@
 {
   "name": "itinypng",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tinypng.com cli tool",
   "bin": {
-    "itinypng": "bin/itinypng.js"
+    "itpng": "bin/itinypng.js"
   },
   "repository": {
     "type": "git",
