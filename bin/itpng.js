@@ -26,13 +26,17 @@ fs.readdirSync(process.cwd()).forEach(function (file) {
 });
 
 if (toConvert.length > 0) {
-    toConvert.forEach(function (file) {
+    toConvert.forEach(function (file, i) {
         var source = tinify.fromFile(file);
         var parts = file.split('.');
         var extension = parts.pop();
-        source.toFile(parts.join('.') + '_compressed' + '.' + extension);
+        source.toFile(parts.join('.') + '_compressed' + '.' + extension, function () {
+            console.log(' + ' + parts.join('.') + '.' + extension);
+            if (i === toConvert.length - 1) {
+                console.log('Done. You have ' + tinify.compressionCount + ' total compressions.');
+            }
+        });
     });
-    console.log('Done converting ' + toConvert.length + ' files!');
 } else {
-    console.log('No files to convert');
+    console.log('No files to compress');
 }
