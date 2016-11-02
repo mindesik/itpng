@@ -1,6 +1,6 @@
 {
   "name": "itinypng",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Tinypng.com cli tool",
   "bin": {
     "itpng": "bin/itinypng.js"
